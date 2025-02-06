@@ -18,7 +18,7 @@ services:
     container_name: backend-api
     volumes:
       - ./app:/var/www/html/app
-      - ./config/prod/virtualhosts/films-alberto-despliegue.api.com.conf:/etc/apache2/sites-enabled/films-alberto-despliegue.api.com.conf
+      - ./config/prod/virtualhosts/films-alberto-despliegue.chickenkiller.api.com.conf:/etc/apache2/sites-enabled/films-alberto-despliegue.chickenkiller.api.com.conf
     ports:
       - "8081:80"
     restart: always
