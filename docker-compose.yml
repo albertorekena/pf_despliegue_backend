@@ -13,7 +13,7 @@ services:
     volumes:
       - ./config/prod/mysql_dump:/docker-entrypoint-initdb.d
       - mysql-data:/var/lib/mysql
-  app:
+  api:
     build: . 
     container_name: backend-api
     volumes:
