@@ -1,0 +1,22 @@
+FROM debian:latest
+
+LABEL org.opencontainers.image.authors="albertorequena.alu@iespacomolla.es"
+
+# Instalación de las herramientas requeridas
+RUN apt-get update && apt-get upgrade -y \
+    install -y apache2 \
+    php \
+    php-mysql \
+    php-yaml \
+    curl \
+    nano \
+    libapache2-mod-php php-mysqli
+
+# Habilitar módulos de Apache
+RUN a2enmod rewrite 
+RUN a2enmod headers
+
+EXPOSE 80
+
+# Comando para iniciar Apache
+CMD ["apache2ctl", "-D", "FOREGROUND"]
