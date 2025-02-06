@@ -13,7 +13,7 @@ LABEL org.opencontainers.image.authors="albertorequena.alu@iespacomolla.es"
 #     libapache2-mod-php php-mysqli
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y apache2 \
-    php \
+    php -y \
     php-mysql \
     php-yaml \
     curl \

@@ -21,7 +21,7 @@ services:
       - ./app:/var/www/html/app
       - ./config/dev/virtualhosts/films-alberto-despliegue-dev.api.com.conf:/etc/apache2/sites-enabled/films-alberto-despliegue-dev.api.com.conf
     ports:
-      - "8081:80"
+      - "8080:80"
     depends_on:
       - db
 volumes:

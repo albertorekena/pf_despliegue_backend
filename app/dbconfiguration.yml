@@ -1,4 +1,4 @@
-ip: ""
-dbname: ""
-user: ""
-pass: ""
+ip: "db"
+dbname: "films"
+user: "dbuser"
+pass: "dbuser"
