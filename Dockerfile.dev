@@ -2,15 +2,6 @@ FROM debian:latest
 
 LABEL org.opencontainers.image.authors="albertorequena.alu@iespacomolla.es"
 
-# Instalación de las herramientas requeridas
-# RUN apt-get update && apt-get upgrade -y \
-#     install -y apache2 \
-#     php \
-#     php-mysql \
-#     php-yaml \
-#     curl \
-#     nano \
-#     libapache2-mod-php php-mysqli
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y apache2 \
     php -y \
