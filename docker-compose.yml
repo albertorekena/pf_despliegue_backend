@@ -20,7 +20,7 @@ services:
       - ./app:/var/www/html/app
       - ./config/prod/virtualhosts/films-alberto-despliegue.api.chickenkiller.com.conf:/etc/apache2/sites-enabled/films-alberto-despliegue.api.chickenkiller.com.conf
     ports:
-      - "8080:80"
+      - "8081:80"
     restart: always
     depends_on:
       - db
